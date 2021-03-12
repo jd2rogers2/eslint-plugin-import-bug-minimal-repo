@@ -20,5 +20,6 @@ module.exports = {
   },
   rules: {
     'import/no-unresolved': [2, { commonjs: true, amd: true }],
+    'import/named': 2,
   },
 };
