@@ -5,10 +5,15 @@ module.exports = {
     node: true,
   },
   extends: [
-    'airbnb-base',
+    // 'plugin:import/recommended',
+    // 'airbnb-base',
+  ],
+  plugins: [
+    'import'
   ],
   parserOptions: {
     ecmaVersion: 11,
+		sourceType: 'module',
   },
   settings: {
     'import/internal-regex': '^@my/',
@@ -17,9 +22,11 @@ module.exports = {
         extensions: ['.js'],
       },
     },
+    'import/ignore': ['!^@my'],
   },
   rules: {
     'import/no-unresolved': [2, { commonjs: true, amd: true }],
     'import/named': 2,
+    'semi': ['warn'],
   },
 };

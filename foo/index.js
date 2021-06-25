@@ -1,6 +1,3 @@
-function helloFoo() {
-  // eslint-disable-next-line no-console
+export function helloFoo() {
   console.log('hello foo');
 }
-
-module.exports = { helloFoo };
