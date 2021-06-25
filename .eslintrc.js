@@ -22,9 +22,11 @@ module.exports = {
         extensions: ['.js'],
       },
     },
+    'import/ignore': ['!^@my'],
   },
   rules: {
-    // 'import/no-unresolved': [2, { commonjs: true, amd: true }],
+    'import/no-unresolved': [2, { commonjs: true, amd: true }],
     'import/named': 2,
+    'semi': ['warn'],
   },
 };
